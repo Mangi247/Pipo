@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="este es mi primer proyecto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Experimento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="potter.png">
+</head>
+<body>
+    <header>
+        <img src="img/potter.png" alt="">
+    </header>
+    <ul id="indice">
+        <li><a href="#TI2016">The International 2016</a></li>
+        <li><a href="#TI2017">The International 2017</a></li>
+    </ul>
+    <nav>
+        <a href="https://ed.team">inicio</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <article>
+        <h1>Me siento por 3 horas</h1>
+        <p>intentare estar sentado por tres horas</p>
+        <h2>seguimiento cada hora</h2>
+        <section>
+            <h3>Primera hora</h3>
+            <p>todo paso normlamente</p>
+            <h3>Segunda hora</h3>
+            <p>Todo iba bien hata que me agarro ganas de mear</p>
+            <h3>Tercera hora</h3>
+            <p>Me orine</p>
+        </section>
+        <footer><h4>Gracias a mi trasero por ser colaborador</h4></footer>
+    </article>
+    <br>
+ <!-- esto es un nuevo tema -->
+    <hr>
+    <!-- listas anidadas y de definicion -->
+    <p>Los personajes de mis juegos favoritos son:</p>
+ <ul>
+    <li>Left 4 Dead</li>
+      <ol>
+        <li>Coach</li>
+        <li>Rochelle</li>
+        <li>Ellies</li>
+      </ol>
+    <li>Portal</li>
+       <ol>
+        <li>Ni idea</li>
+        <li>No me dicen el nombre</li>
+       </ol>
+    <li>Dota 2</li>
+      <ol>
+        <li>Jugger</li>
+        <li>Rubick</li>
+        <li>Venom</li>
+     </ol>
+    <li>The Division</li>
+        <ol>
+            <li>No lo se</li>
+            <li>Puede tener el nombre que quieras</li>
+        </ol>
+ </ul>
+ <!-- figure y figcaption -->
+ <figure>
+     <pre>
+         las rosas son rojas,
+         las azules violetas,
+         las calendulas amarillas,
+         quiero tocarte las tetas.
+     </pre>
+ </figure>
+ <figcaption>
+     poema de Pablo Neruda
+ </figcaption>
+ <!-- marcadores -->
+ <h2 id="TI2016">The International 2016</h2>
+ <a href="#indice">Ir al indice</a>
+ <h2 id="TI2017">The international 2017</h2>
+ <p>se realizo en 2017 y fue el pozo de mayor recaudacion de los videojuegos, cuyo ganador fue el equipe de Team Secret</p>
+ <a href="#indice">Ir al indice</a>
+ <hr>
+ <!-- como poner mas de una imagen -->
+<img
+    src="img/dogs.jpg"
+    srcset="img/man.jpg 1.5x,
+            img/moon.jpg 2x"       
+    alt="imagen"
+>
+<!-- como hacer tabla -->
+<table>
+    <caption>Mi horario de juegos</caption>
+    <colgroup>
+        <col span="4">
+        <col style="background: grey">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="2">Dota</td>
+            <td>RE2R</td>
+            <td rowspan="2">Portal</td>
+            <td>Yandere Simulator</td>
+            <td rowspan="2">Just Cause</td>
+        </tr>
+        <tr>
+            <td>Minecraft</td>
+
+            <td>The Division</td>
+        </tr>
+        <tr>
+            <td colspan="5">Estudiar</td>
+        </tr>
+        <tr>
+            <td>Dota</td>
+            <td>Minecraft</td>
+            <td>Portal</td>
+            <td>The Division</td>
+            <td>Just Cause</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>6 creditos</td>
+            <td>3 creditos</td>
+            <td>5 creditos</td>
+            <td>2 creditos</td>
+            <td>7 creditos</td>
+        </tr>
+    </tfoot>
+</table>
+<!-- Formularios  -->
+<h2>Formularios</h2>
+<form action="">
+    <fieldset>
+        <legend>Primer campo</legend>
+            <div>
+                <label >
+                    Nombre de Usuario
+                    <input type="text" name="username">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su correo
+                    <input type="email" name="correo">
+                </label>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Segundo campo</legend>
+            <div>
+                <label>
+                    Ingrese fecha de nacimiento
+                    <input type="date">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Ingrese su contraseña
+                    <input type="password" name="password" required >
+                </label>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Que estacion te gusta</legend>
+            <div>
+                <label><input type="checkbox">Verano</label>
+                <label><input type="checkbox">Otoño</label>
+                <label><input type="checkbox">Primavera</label>
+                <label><input type="checkbox">Invierno</label>
+            </div>
+    </fieldset>
+    <fieldset>
+        <legend>Tu genero</legend>
+        <label><input type="radio" name="gender">Mujer</label>
+        <label><input type="radio" name="gender">Hombre</label>
+        <label><input type="radio" name="gender">Helicoptero de Combate</label>
+    </fieldset>
+    <fieldset>
+        <legend>Select y opciones</legend>
+        <label>
+            Escoge tu pais
+            <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="arg">Argentina</option>
+                    <option value="ve">Venezuela</option>
+                    <option value="bol">Bolivia</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="al">Alemania</option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <textarea name="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+    </fieldset>
+    
+    <input type="submit" value="tu puta madre">
+</form>
+<h1>petuto</h1>
+<br>
+<!-- Videos y codecs en HTML -->
+<video src="media/School Days Episodio 1.mp4" controls poster="img/Poster School Days.png" >Primer episodio de School Days</video>
+<audio src="media/Billie Eilish - bad guy (PatrickReza Remix).mp3" controls></audio>
+<details>
+    <summary>Por que podes ver?</summary>
+    Porque tenes ojos..duh
+</details>
+<script src="script.js">
+    alert("un mensaje de prueba")
+</script>
+</body>
+</html>

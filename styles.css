@@ -1,0 +1,14 @@
+table { 
+    border-collapse: collapse
+}
+
+td{
+    border: 1px solid goldenrod
+}
+th {
+    background: rgb(190, 189, 189)
+}
+td, th {
+    text-align: center;
+    padding: 0.5em;
+}
